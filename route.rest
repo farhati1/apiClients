@@ -1,0 +1,78 @@
+###
+# Créer un nouvel utilisateur
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "Farha",
+    "password": "password",
+    "email": "farhati.@hotmail.fr"
+}
+
+###
+# Obtenir un utilisateur par ID
+GET http://localhost:3000/users/1
+
+###
+# Mettre à jour un utilisateur par ID
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "username": "updateduser",
+    "password": "updatedpassword",
+    "email": "updateduser@example.com"
+}
+
+###
+# Supprimer un utilisateur par ID
+DELETE http://localhost:3000/users/661e782a08af3226a66ed41e
+
+###
+# Connexion d'un utilisateur
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "farhati.@hotmail.fr",
+    "password": "password"
+}
+###
+# Créer un nouveau client
+POST http://localhost:3000/custumers
+Content-Type: application/json
+
+{
+    "name": "Test Customer",
+    "email": "testcustomer@example.com",
+    "phone": "1234567890"
+}
+
+###
+# Obtenir tous les clients
+GET http://localhost:3000/custumers
+
+###
+
+
+# Obtenir un client par ID
+GET http://localhost:3000/custumers/1
+
+###
+
+# Mettre à jour un client par ID
+PUT http://localhost:3000/custumers/1
+Content-Type: application/json
+
+{
+    "name": "Updated Customer",
+    "email": "updatedcustomer@example.com",
+    "phone": "0987654321"
+}
+
+###
+
+# Supprimer un client par ID
+DELETE http://localhost:3000/custumers/1
+
+
